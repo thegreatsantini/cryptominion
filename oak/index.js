@@ -2,10 +2,11 @@
 
 require('./Button')
 require('./Checkbox')
+require('./Input')
+require('./Input/Number')
+const utils = require('./utils')
 const Dialog = require('./Dialog')
 
 // document.body.addElement(dialog.html.js)
-
-module.exports = {
-  dialog: Dialog.show
-}
+utils.dialog = Dialog
+module.exports = utils
